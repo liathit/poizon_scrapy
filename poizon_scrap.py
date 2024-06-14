@@ -84,7 +84,7 @@ for page in range(1, 21):
 
     sneakers_info_list = []
 
-    with open(f"data/all_sneakers{page}.json") as file:
+    with open(f"all_sneakers{page}.json") as file:
         all_sneak_info = json.load(file)
 
     for sneaker_data in all_sneak_info:
