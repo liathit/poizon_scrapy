@@ -77,7 +77,7 @@ for page in range(1, 21):
 
         all_sneakers.append({"name": sneakers_name, "link": sneakers_link, "dimensions": all_size})
 
-    with open (f"data/all_sneakers{page}.json", "w", encoding="utf-8") as file:
+    with open (f"all_sneakers{page}.json", "w", encoding="utf-8") as file:
         json.dump(all_sneakers, file, indent = 4, ensure_ascii = False)
 
     #_________________________
@@ -118,5 +118,5 @@ for page in range(1, 21):
                 
         sneakers_info_list.append(sneaker_data)
 
-    with open(f"data_size/sneakers_info{page}.json", "w", encoding="utf-8") as file:
+    with open(f"sneakers_info{page}.json", "w", encoding="utf-8") as file:
         json.dump(sneakers_info_list, file, indent=4, ensure_ascii=False)
